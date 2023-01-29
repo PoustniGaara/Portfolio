@@ -31,7 +31,9 @@ const Contact = ({ setContentAnimation }) => {
       .then((result) => {
         setShowError(false);
         setShowSuccess(true);
-        console.log(result.text);
+        setName('');
+        setEmail('');
+        setMessage('');
       }, (error) => {
         console.log(error.text);
       });

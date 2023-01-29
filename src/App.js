@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
+import Error from './Error';
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'
 
 
@@ -31,7 +32,7 @@ function App() {
         <Route index element={<AboutMe setContentAnimation={setContentAnimation} />}  />
         <Route path="portfolio" element={<Projects setContentAnimation={setContentAnimation}/>}  />
         <Route path="contact" element={<Contact setContentAnimation={setContentAnimation} />}  />
-        {/* <Route path="*" element={<NoPage />} /> */}
+        <Route path="*" element={<Error setContentAnimation={setContentAnimation}/>} />
       </Routes>
       </div>
       }

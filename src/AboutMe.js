@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import contactPhoto from './images/me6.jpg'
-import pieChart from './images/pie-chart.png'
+import pieChart from './images/pie-chart.jpg'
 import profile from './images/profile.jpg'
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'
 
@@ -21,7 +21,7 @@ const AboutMe = ({ setContentAnimation }) => {
                             <h1>about.</h1>
                             <p className='intro'>I'm full-stack software developer based in Aalborg, Denmark.</p>
                             <p className='introInfo'>Currently I am in penultimate semester of computer science at UCN university, highly motivated, eager to learn new technologies and try to constantly improve my knowledge to be the best Software engineer I could be. At the moment I am seeking to use my proven skills to design, build </p>
-                            <motion.p whileHover={{ scale: 1.1 }} className='sFText'>Software solution you need!</motion.p>
+                            <p className='sFText'>Software solution you need!</p>
                         </motion.div>
                         <motion.div
                             animate={{ x: 0 }}

@@ -14,13 +14,13 @@ const Footer = ({setContentAnimation}) => {
         <a href="www.tindula-software.com">© 2023 Viktor Tindula</a>
       </div>
       <div className='footerColumn2'>
-      <Link to="/" className='footerItem' onClick={() =>setContentAnimation(false)}> About
+      <Link to="/" className='footerItem' onClick={() =>setContentAnimation(false)}> about
         </Link>
-        <Link to="portfolio" className='footerItem' onClick={() =>setContentAnimation(false)}>Portfolio
+        <Link to="portfolio" className='footerItem' onClick={() =>setContentAnimation(false)}>portfolio
         </Link>
-        <a href={Pdf} target="_blank" className='footerItem' >Resume
+        <a href={Pdf} target="_blank" className='footerItem' >resume
         </a>
-        <Link to="contact" className='footerItem' onClick={() =>setContentAnimation(false)}>Contact
+        <Link to="contact" className='footerItem' onClick={() =>setContentAnimation(false)}>contact
         </Link>
       </div>
     </div>

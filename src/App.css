@@ -12,6 +12,14 @@
   --low-text-weight: 300;
 }
 
+.errorDiv{
+  margin-bottom: 24em;
+  padding-top: 8em;
+  display: flex;
+  align-items: center;
+
+}
+
 a{
   text-decoration: none;
   color: inherit;
@@ -488,6 +496,11 @@ svg.contactIcon{
 .menuPanelItem p:hover{
   color:#757575;
 }
+
+.active p{
+  color:#757575 !important;
+}
+
 
 /* FOOTER */
 

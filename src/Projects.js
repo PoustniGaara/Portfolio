@@ -131,7 +131,7 @@ const Projects = ({setContentAnimation}) => {
               <Accordion className='accordion'>
                 <AccordionSummary>1. About</AccordionSummary>
                 <AccordionDetails>
-                  <p>I created this portfolio with the intention of sharing my profile and my work with people. The portfolio has an informative character and at the same time, it can show up my skills on the front-end.</p>
+                  <p>I created this portfolio with the intention of sharing my profile and my work with people. The portfolio has an informative character and at the same time, it can show up my skills on the front-end. The web page is responsive, although I omitted the mobile phone screen size because this portfolio is aimed at desktop and laptop users.</p>
                   <p>Before I started building it, I took the React course as I didn't have any experience with it before. The course took me about 2 weeks mainly because of my previous experience with HTML, CSS, and JavaScript. You can preview the portfolio yourself here on my website!</p>
                   <p>This portfolio itself took me about a week and a half to finalize.</p>
                 </AccordionDetails>
@@ -139,11 +139,11 @@ const Projects = ({setContentAnimation}) => {
               <Accordion>
                 <AccordionSummary>2. What I've used To built this</AccordionSummary>
                 <AccordionDetails>
-                  This project is built by React and its various libraries, JavaScript, HTML and CSS.
+                  This project is built by React and its various libraries, JavaScript, HTML and CSS. 
                 </AccordionDetails>
               </Accordion>
               <div className="github sep greenTheme">
-                <a href="https://github.com/PoustniGaara/UCN-e-shop" className='gitLink'>Link to GitHub</a>
+                <a href="https://github.com/PoustniGaara/Portfolio" className='gitLink'>Link to GitHub</a>
               </div>
             </div>
           </div>
