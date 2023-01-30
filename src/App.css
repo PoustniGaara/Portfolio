@@ -473,7 +473,7 @@ svg.contactIcon{
   /* #212529 */
   background-color: #2c2c2c;
   max-width: 100%;
-  min-height: 40%;
+  min-height: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -486,18 +486,24 @@ svg.contactIcon{
   cursor: pointer;
 }
 
-.menuPanelItem p{
+
+.menuPanelItem {
   color: white;
   font-weight: 300;
   font-size: x-large;
-  margin: 0.2em 0em;
+  margin: 0.4em 0em;
 }
 
-.menuPanelItem p:hover{
+.menuPanelItem p{
+  margin: 0;
+
+}
+
+.menuPanelItem:hover{
   color:#757575;
 }
 
-.active p{
+.active{
   color:#757575 !important;
 }
 
@@ -524,8 +530,8 @@ svg.contactIcon{
   margin-right: 1em;
 }
 
-.footerColumn1{
-
+.footerItem:hover{
+  color: var(--normal-text-color) !important;
 }
 
 .footerColumn2{

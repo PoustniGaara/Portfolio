@@ -1,7 +1,7 @@
 import { FiPhoneCall } from 'react-icons/fi'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import { TfiEmail } from 'react-icons/tfi'
-import contactPhoto from './images/me6.jpg'
+import contactPhoto from './images/me.jpg'
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'

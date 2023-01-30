@@ -19,12 +19,33 @@ import {
 function App() {
   const [headerAnimation, setHeaderAnimation] = useState(false);
   const [contentAnimation, setContentAnimation] = useState(false);
+
+  const path = window.location.pathname;
+  let page;
+
+  if (path === "/") {
+    page = "about";
+  } else if (path === "/portfolio") {
+    page = "portfolio";
+  } else if (path === "/contact") {
+    page = "contact";
+  } else {
+    page = "notFound";
+  }
+
+  function contentAnimationToggle(pageName){
+    if(page === pageName){
+      return;
+    }
+    setContentAnimation(false);
+  }
+
   return (
     <BrowserRouter>
     <div className='MainPage'>
       <motion.div animate={{ y: 0, opacity: 1 }} initial={{ y: -150, opacity: 0 }} transition={{ type: "tween", duration: 1 }}
         onAnimationComplete={() => setHeaderAnimation(true)}>
-        <Header setContentAnimation={setContentAnimation} />
+        <Header setContentAnimation={contentAnimationToggle} page={page}/>
       </motion.div>
       {
       headerAnimation && < div className='content'>
@@ -36,7 +57,7 @@ function App() {
       </Routes>
       </div>
       }
-      {contentAnimation && <Footer setContentAnimation={setContentAnimation} />}
+      {contentAnimation && <Footer setContentAnimation={contentAnimationToggle} />}
     </div>
   </BrowserRouter>
   );

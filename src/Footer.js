@@ -6,21 +6,22 @@ import {
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'
 
 
-const Footer = ({setContentAnimation}) => {
+const Footer = ({contentAnimationToggle}) => {
 
   return (
     <div id='footer'>
       <div className='footerColumn1'>
-        <a href="www.tindula-software.com">© 2023 Viktor Tindula</a>
+      <Link to="/" className='footerItem' onClick={(event) =>contentAnimationToggle(event.target.innerHTML)}> © 2023 Viktor Tindula
+        </Link>
       </div>
       <div className='footerColumn2'>
-      <Link to="/" className='footerItem' onClick={() =>setContentAnimation(false)}> about
+      <Link to="/" className='footerItem' onClick={(event) =>contentAnimationToggle(event.target.innerHTML)}> about
         </Link>
-        <Link to="portfolio" className='footerItem' onClick={() =>setContentAnimation(false)}>portfolio
+        <Link to="portfolio" className='footerItem' onClick={(event) =>contentAnimationToggle(event.target.innerHTML)}>portfolio
         </Link>
         <a href={Pdf} target="_blank" className='footerItem' >resume
         </a>
-        <Link to="contact" className='footerItem' onClick={() =>setContentAnimation(false)}>contact
+        <Link to="contact" className='footerItem' onClick={(event) =>contentAnimationToggle(event.target.innerHTML)}>contact
         </Link>
       </div>
     </div>

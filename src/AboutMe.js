@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import contactPhoto from './images/me6.jpg'
-import pieChart from './images/pie-chart.jpg'
-import profile from './images/profile.jpg'
+import contactPhoto from './images/me.jpg'
+import pieChart from './images/pie-chart.webp'
+import profile from './images/profile1.jpg'
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'
 
 

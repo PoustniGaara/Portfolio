@@ -5,42 +5,21 @@ import {
 } from "react-router-dom";
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'
 
-const Header = ({setContentAnimation}) => {
-
-  const path = window.location.pathname;
-  let page;
-
-  if (path === "/") {
-    page = "about";
-  } else if (path === "/portfolio") {
-    page = "portfolio";
-  } else if (path === "/contact") {
-    page = "contact";
-  } else {
-    page = "notFound";
-  }
-
-
-  console.log(page);
-
-
+const Header = ({contentAnimationToggle, page}) => {
   return (
     <header>
       <div className='header'>
-      <Link to="/" className='headerTitle'  onClick={() =>setContentAnimation(false)}>Viktor Tindula</Link>
+      <Link to="/" className='headerTitle'  onClick={(event) =>contentAnimationToggle(event.target.innerHTML)}>Viktor Tindula</Link>
       </div>
       <div className='menuPanel'>
-        <Link to="/" className={`menuPanelItem ${page === 'about' ? "active" : ""}`} id='about' onClick={() =>setContentAnimation(false)}> 
-        <motion.p >about</motion.p> 
+        <Link to="/" className={`menuPanelItem ${page === 'about' ? "active" : ""}`} id='about' onClick={(event) =>contentAnimationToggle(event.target.innerHTML)}> about
         </Link>
-        <Link to="portfolio" className={`menuPanelItem ${page === 'portfolio' ? "active" : ""}`} id='portfolio' onClick={() =>setContentAnimation(false)}>
-        <motion.p >portfolio</motion.p> 
+        <Link to="portfolio" className={`menuPanelItem ${page === 'portfolio' ? "active" : ""}`} id='portfolio' onClick={(event) =>contentAnimationToggle(event.target.innerHTML)}>portfolio
         </Link>
         <a href={Pdf} target="_blank" className='menuPanelItem' >
         <motion.p >resume</motion.p> 
         </a>
-        <Link to="contact" className={`menuPanelItem ${page === 'contact' ? "active" : ""}`} id='contact' onClick={() =>setContentAnimation(false)}>
-        <motion.p >contact</motion.p>
+        <Link to="contact" className={`menuPanelItem ${page === 'contact' ? "active" : ""}`} id='contact' onClick={(event) =>contentAnimationToggle(event.target.innerHTML)}>contact
         </Link>
       </div>
     </header>
